@@ -1,0 +1,90 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    @*Комментарий*@
+    <p>1</p>
+    <p>Math.Sin(0) + 10 = @(Math.Sin(0) + 10)</p> <hr />
+
+    <p>@@</p> <hr />
+
+    <p>
+        @{
+            int n = 2030;
+            n += 5;
+        }
+        n = @n  <br />
+        n + 100 = @(n + 100)
+    </p> <hr />
+
+    <p>2</p>
+    <p>
+        @if (n == 2035)
+        {
+        <p>Так и есть </p>
+        }
+        else
+        {
+        <p> Увы </p>
+        }
+        </p>
+        <hr />
+        <p>3</p>
+        <p>
+            @{Random r = new Random(); }
+            @switch (r.Next(4))
+            {
+                case 0: <i>Курсив</i> break;
+                case 1: <u>Подчеркнутый</u> break;
+                case 2: <b>Жирый</b> break;
+                case 3: <s>Зачёркнутый</s>break;
+            }
+        </p> <hr />
+        <p>4</p>
+        <p>
+            <ul>
+                @{
+
+                    int start = r.Next(10, 100);
+                    for (int i = start; i < start + 10; i++)
+                    {
+                        <li>@i<sup>2</sup> = @Math.Pow(i, 2)</li>
+                    }
+                }
+            </ul>
+        </p> <hr />
+        <p>5</p>
+        <p>
+
+            @functions
+            {
+            public int Sum(int a, int b) => a + b;
+            }
+
+            @{
+                int v1 = r.Next(10);
+                int v2 = r.Next(10);
+            }
+
+            <i>@v1  + @v2  = @Sum(v1, v2)</i>
+
+
+
+        </p><hr />
+
+    <p>6</p>
+    <p>
+        @{ 
+            int red = r.Next(256);
+            int green = r.Next(256);
+            int blue = r.Next(256);
+
+            string backColor = $"{Convert.ToString(red,16)}{Convert.ToString(green, 16)}{Convert.ToString(blue, 16)}";
+        }
+
+        <div style="background-color:@backColor; height:100px;width:100%;" ></div>
+    </p>
+    </body>
+</html>

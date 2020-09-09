@@ -1,0 +1,7 @@
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\bin\Debug\Example_19112.exe.config
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\bin\Debug\Example_19112.exe
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\bin\Debug\Example_19112.pdb
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\obj\Debug\Example_19112.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\obj\Debug\Example_19112.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\obj\Debug\Example_19112.exe
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_19112\obj\Debug\Example_19112.pdb

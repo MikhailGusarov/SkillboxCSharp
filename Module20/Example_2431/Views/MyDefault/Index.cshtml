@@ -1,0 +1,53 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Страница Index.cshtml</title>
+    <link href="~/css/stylecss.css" rel="stylesheet" />
+    <script src="~/js/scripts.js"></script>
+</head>
+<body>
+    <p class="fontStyle">
+
+        <br />
+        <input type="text" id="txt" />
+        <br />
+        <table border="1">
+            @for (int i = 0; i < 10; i++)
+            {
+                <tr>
+                    <td><strong>Число - @i </strong></td>
+                    <td><input type="button" value="Жми меня - @i" onclick="HelloWorld('txt')" /></td>
+                </tr>
+
+            }
+        </table>
+
+
+    </p>
+
+
+    @{
+        int valueA = 10;
+    }
+
+    @functions
+    {
+    string PrintSqr(int k)
+    {
+        return $"{k * k}";
+    }
+
+    }
+
+    <h1>Текст</h1>
+
+    @{
+
+        for (int i = 0; i < valueA; i++)
+        {
+            <p>@PrintSqr(i)</p>
+        }
+    }
+</body>
+
+@*https://docs.microsoft.com/ru-ru/aspnet/core/mvc/views/razor?view=aspnetcore-3.0*@
+</html>

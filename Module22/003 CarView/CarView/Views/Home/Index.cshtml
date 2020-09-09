@@ -1,0 +1,20 @@
+﻿@using CarViewApp.Models
+@{
+    ViewData["Title"] = "Автомобили";
+    Layout = "_Layout";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Список автомобилей</div>
+        <table class="table table-striped">
+
+            @foreach (Car car in Model)
+            {
+                <tr>
+                    <th>@car.CarMark</th>
+                    <th>@car.CarModel</th>
+                    <th>@car.CarEngine</th>
+                </tr>
+            }
+        </table>
+</div>

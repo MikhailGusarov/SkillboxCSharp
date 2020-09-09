@@ -1,0 +1,25 @@
+Полезные ссылки
+
+https://www.microsoft.com/ru-ru/sql-server/sql-server-editions-express
+
+https://www.microsoft.com/ru-ru/sql-server/sql-server-downloads
+
+
+
+
+Страница отмены подписок 
+https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade
+
+Страница удаления кредитных карт https://portal.azure.com/#blade/Microsoft_Azure_GTM/BillingAccountMenuBlade/billingAccountPaymentMethodItem/billingAccountId/
+
+
+Удаление аккаунта Microsoft https://support.microsoft.com/ru-ru/help/12412/microsoft-account-how-to-close-account
+
+Обязательно дождитесь надписи 
+
+Учетная запись you@email.ru будет закрыта ДД.ММ.ГГГГ 
+Вы можете повторно открыть эту учетную запись, войдя в нее в течение 60 дн. 
+Чтобы повторно открыть учетную запись, вам потребуется подтвердить свою личность 
+с помощью текущих сведений для защиты учетной записи.
+
+По истечении 60дн. с момента закрытия учетной записи восстановить ее будет невозможно.

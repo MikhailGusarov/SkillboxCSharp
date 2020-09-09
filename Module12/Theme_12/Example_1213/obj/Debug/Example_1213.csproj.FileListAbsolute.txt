@@ -1,0 +1,12 @@
+D:\ Work\SkillBox\CodeSource\Example_1213\bin\Debug\Example_1213.exe.config
+D:\ Work\SkillBox\CodeSource\Example_1213\bin\Debug\Example_1213.exe
+D:\ Work\SkillBox\CodeSource\Example_1213\bin\Debug\Example_1213.pdb
+D:\ Work\SkillBox\CodeSource\Example_1213\obj\Debug\Example_1213.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Example_1213\obj\Debug\Example_1213.exe
+D:\ Work\SkillBox\CodeSource\Example_1213\obj\Debug\Example_1213.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\bin\Debug\Example_1213.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\bin\Debug\Example_1213.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\bin\Debug\Example_1213.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\obj\Debug\Example_1213.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\obj\Debug\Example_1213.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1213\obj\Debug\Example_1213.pdb

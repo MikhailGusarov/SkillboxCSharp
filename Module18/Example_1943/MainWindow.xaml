@@ -1,0 +1,17 @@
+﻿<Window x:Class="Example_1943.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example_1943"
+        mc:Ignorable="d"
+        Title="WpfCalc" Height="270" Width="300" FontSize="20" WindowStartupLocation="CenterScreen">
+    <StackPanel VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch">
+        <TextBox x:Name="txtA" Margin="5"/>
+        <TextBox x:Name="txtB" Margin="5"/>
+        <TextBlock x:Name="tbResult" Margin="5"/>
+        <Button x:Name="btnResult" Margin="5" Content="Итог"/>
+
+    </StackPanel>
+</Window>

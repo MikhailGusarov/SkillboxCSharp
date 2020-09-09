@@ -1,0 +1,13 @@
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\bin\Debug\Example_1542_Library.dll
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\bin\Debug\Example_1542_Library.pdb
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\UserControl1.g.cs
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library_MarkupCompile.cache
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library_MarkupCompile.lref
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\UserControl1.baml
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.g.resources
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.Properties.Resources.resources
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.csproj.GenerateResource.cache
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.dll
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.pdb
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1542_Library\obj\Debug\Example_1542_Library.csprojAssemblyReference.cache

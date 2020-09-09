@@ -1,0 +1,16 @@
+﻿@model List<Worker>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Contact";
+}
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>Name: @item.Name</li>
+        <li>Company: @item.Company</li>
+        <li>Age: @item.Age</li>
+        <li>Salary: @item.Salary</li>
+    </ul>
+    <hr />
+}

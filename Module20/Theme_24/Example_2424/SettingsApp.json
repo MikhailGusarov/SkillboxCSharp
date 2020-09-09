@@ -1,0 +1,10 @@
+{
+  "Agent": {
+    "username": "superadmin",
+    "password": "qwertyuio"
+  },
+  "FontStyle": {
+    "color": "#0000ff",
+    "font-size": "14px"
+  }
+}

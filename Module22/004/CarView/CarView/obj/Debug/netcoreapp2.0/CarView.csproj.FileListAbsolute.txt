@@ -1,0 +1,22 @@
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\bin\Debug\netcoreapp2.0\CarView.deps.json
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\bin\Debug\netcoreapp2.0\CarView.runtimeconfig.json
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\bin\Debug\netcoreapp2.0\CarView.runtimeconfig.dev.json
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\bin\Debug\netcoreapp2.0\CarView.dll
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\bin\Debug\netcoreapp2.0\CarView.pdb
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.csprojAssemblyReference.cache
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.csproj.CoreCompileInputs.cache
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.AssemblyInfoInputs.cache
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.AssemblyInfo.cs
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.dll
+C:\Users\Sk\Desktop\Новая папка (5)\CarView\obj\Debug\netcoreapp2.0\CarView.pdb
+C:\Users\Sk\Desktop\App\CarView\bin\Debug\netcoreapp2.0\CarView.deps.json
+C:\Users\Sk\Desktop\App\CarView\bin\Debug\netcoreapp2.0\CarView.runtimeconfig.json
+C:\Users\Sk\Desktop\App\CarView\bin\Debug\netcoreapp2.0\CarView.runtimeconfig.dev.json
+C:\Users\Sk\Desktop\App\CarView\bin\Debug\netcoreapp2.0\CarView.dll
+C:\Users\Sk\Desktop\App\CarView\bin\Debug\netcoreapp2.0\CarView.pdb
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.csprojAssemblyReference.cache
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.csproj.CoreCompileInputs.cache
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.AssemblyInfoInputs.cache
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.AssemblyInfo.cs
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.dll
+C:\Users\Sk\Desktop\App\CarView\obj\Debug\netcoreapp2.0\CarView.pdb

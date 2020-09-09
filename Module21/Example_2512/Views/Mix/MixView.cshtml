@@ -1,0 +1,22 @@
+﻿@using Example_2512.Models
+
+@model MixModel
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @{
+        Random r = new Random();
+        <title>@Model.Titles[r.Next(4)]</title>
+    }
+</head>
+<body>
+    @{ 
+        for (int i = 0; i < Model.DbWorkers.Count(); i++)
+        {
+            <p>
+                @i - @Model.DbWorkers[i].Name
+            </p>
+            }
+        }
+</body>
+</html>

@@ -1,0 +1,2 @@
+D:\ Work\SkillBox\CodeSource\Theme_13\Example_1321\obj\Debug\Example_1321.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Theme_13\Example_1321\obj\Debug\Example_1321.csproj.CoreCompileInputs.cache

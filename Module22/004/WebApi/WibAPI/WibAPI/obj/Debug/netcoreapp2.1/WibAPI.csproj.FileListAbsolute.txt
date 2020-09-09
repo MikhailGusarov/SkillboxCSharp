@@ -1,0 +1,14 @@
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\bin\Debug\netcoreapp2.1\WibAPI.deps.json
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\bin\Debug\netcoreapp2.1\WibAPI.runtimeconfig.json
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\bin\Debug\netcoreapp2.1\WibAPI.runtimeconfig.dev.json
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\bin\Debug\netcoreapp2.1\WibAPI.dll
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\bin\Debug\netcoreapp2.1\WibAPI.pdb
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.csprojAssemblyReference.cache
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.csproj.CoreCompileInputs.cache
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.RazorAssemblyInfo.cache
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.RazorAssemblyInfo.cs
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.AssemblyInfoInputs.cache
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.AssemblyInfo.cs
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.dll
+C:\Users\Sk\Desktop\26\WebApi\WibAPI\WibAPI\obj\Debug\netcoreapp2.1\WibAPI.pdb

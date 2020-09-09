@@ -1,0 +1,52 @@
+﻿@using Examplе_2541.Entitys
+@{
+    ViewData["Title"] = "AllView";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Все автомобили</title>
+    <style type="text/css">
+
+        .btn {
+            /*Пример с сайта https://html5book.ru/krasivye-knopki-dlya-sayta-chast-3/*/
+            text-decoration: none;
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 50px 0 50px;
+            margin: 0 20px;
+            background: linear-gradient(-135deg, #00E5FE, #4463FE);
+            border-width: 0;
+            border-radius: 50px;
+            font-size: 20px;
+            color: white;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="align-content:center;">
+        <table border="1">
+            <tr>
+                <td width="50">№</td>
+                <td width="150">Марка</td>
+                <td width="150">Модель</td>
+                <td width="150">V Двигателя</td>
+            </tr>
+            @foreach (Car car in ViewBag.Cars)
+            {
+                <tr>
+                    <td width="50">@car.Id</td>
+                    <td width="150">@car.CarMark</td>
+                    <td width="150">@car.CarModel</td>
+                    <td width="150">@car.CarEngine</td>
+                </tr>
+            }
+        </table>
+        <br />
+
+        <a href="/Car/Add" class="btn">Добавить</a>
+    </div>
+</body>
+</html>

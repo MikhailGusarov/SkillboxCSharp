@@ -1,0 +1,14 @@
+D:\ Work\SkillBox\CodeSource\Example_1442\obj\Debug\Example_1442.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Example_1442\obj\Debug\Example_1442.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Example_1442\bin\Debug\Example_1442.exe.config
+D:\ Work\SkillBox\CodeSource\Example_1442\bin\Debug\Example_1442.exe
+D:\ Work\SkillBox\CodeSource\Example_1442\bin\Debug\Example_1442.pdb
+D:\ Work\SkillBox\CodeSource\Example_1442\obj\Debug\Example_1442.exe
+D:\ Work\SkillBox\CodeSource\Example_1442\obj\Debug\Example_1442.pdb
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\bin\Debug\Example_1442.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\bin\Debug\Example_1442.exe
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\bin\Debug\Example_1442.pdb
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\obj\Debug\Example_1442.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\obj\Debug\Example_1442.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\obj\Debug\Example_1442.exe
+D:\ Work\SkillBox\CodeSource\Theme_14\Example_1442\obj\Debug\Example_1442.pdb

@@ -1,0 +1,14 @@
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\bin\Debug\Example_1219Wpf2.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\bin\Debug\Example_1219Wpf2.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\bin\Debug\Example_1219Wpf2.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\MainWindow.g.cs
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\App.g.cs
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2_MarkupCompile.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2_MarkupCompile.lref
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\MainWindow.baml
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.g.resources
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.Properties.Resources.resources
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.csproj.GenerateResource.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1219Wpf2\obj\Debug\Example_1219Wpf2.pdb

@@ -1,0 +1,11 @@
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\bin\Release\netcoreapp2.1\Example_2561.deps.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\bin\Release\netcoreapp2.1\Example_2561.runtimeconfig.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\bin\Release\netcoreapp2.1\Example_2561.runtimeconfig.dev.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\bin\Release\netcoreapp2.1\Example_2561.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\bin\Release\netcoreapp2.1\Example_2561.pdb
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.AssemblyInfoInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.AssemblyInfo.cs
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2561\obj\Release\netcoreapp2.1\Example_2561.pdb

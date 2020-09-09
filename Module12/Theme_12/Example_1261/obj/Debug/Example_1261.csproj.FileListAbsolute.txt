@@ -1,0 +1,8 @@
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\obj\Debug\Example_1261.Properties.Resources.resources
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\obj\Debug\Example_1261.csproj.GenerateResource.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\obj\Debug\Example_1261.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\bin\Debug\Example_1261.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\bin\Debug\Example_1261.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\bin\Debug\Example_1261.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\obj\Debug\Example_1261.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1261\obj\Debug\Example_1261.pdb

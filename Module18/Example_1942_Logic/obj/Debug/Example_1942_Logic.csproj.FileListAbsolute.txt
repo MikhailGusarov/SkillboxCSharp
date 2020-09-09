@@ -1,0 +1,6 @@
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\bin\Debug\Example_1942_Logic.dll
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\bin\Debug\Example_1942_Logic.pdb
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\obj\Debug\Example_1942_Logic.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\obj\Debug\Example_1942_Logic.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\obj\Debug\Example_1942_Logic.dll
+D:\Work\SkillBox\CodeSource\CodeSource\Example_1942_Logic\obj\Debug\Example_1942_Logic.pdb

@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfAppClient.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppClient"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+
+        <StackPanel x:Name="stackPanel" Grid.Column="1" DataContext="{Binding car}">
+            <TextBlock Text="Марка" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtMark" Text="{Binding car.CarMark, Mode=TwoWay}" FontSize="20" Margin="5"/>
+
+            <TextBlock Text="Модель" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtModel" Text="{Binding car.CarMark, Mode=TwoWay}"  FontSize="20" Margin="5"/>
+
+            <TextBlock Text="Двигатель" FontSize="20" Margin="5"/>
+            <TextBox x:Name="txtEngine" Text="{Binding CarEngine, Mode=TwoWay}"  FontSize="20" Margin="5"/>
+
+            <Button x:Name="btnAdd" Content="Добавить"  FontSize="20" Margin="5"/>
+            <Button x:Name="btnRef" Content="Обновить"  FontSize="20" Margin="5"/>
+        </StackPanel>
+        <ListView x:Name="listView">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding CarMark}" Header="CarMark"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding CarModel}" Header="CarModel"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding CarEngine}" Header="CarEngine"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

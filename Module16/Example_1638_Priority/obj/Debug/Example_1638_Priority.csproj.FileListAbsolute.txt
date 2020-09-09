@@ -1,0 +1,6 @@
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\bin\Debug\Example_1638_Priority.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\bin\Debug\Example_1638_Priority.exe
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\bin\Debug\Example_1638_Priority.pdb
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\obj\Debug\Example_1638_Priority.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\obj\Debug\Example_1638_Priority.exe
+D:\ Work\SkillBox\CodeSource\Theme_16\Example_1638_Priority\obj\Debug\Example_1638_Priority.pdb

@@ -1,0 +1,31 @@
+﻿@model List<Worker>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contact Page</title>
+</head>
+<body>
+ 
+
+    @foreach (var item in Model)
+    {
+    <ul>
+        <li>Name: @item.Name</li>
+        <li>Company: @item.Company</li>
+        <li>Age: @item.Age</li>
+        <li>Salary: @item.Salary</li>
+    </ul>
+    <hr />
+    }
+
+
+    <p>
+        [ <a href="/Home/About">About</a> ]
+        [ Contact ]
+        [ <a href="/Home/Feedback">Feedback</a> ]
+        [ <a href="/Home/Index">Index</a> ]
+
+    </p>
+
+</body>
+</html>

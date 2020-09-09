@@ -1,0 +1,7 @@
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\bin\Release\Example_2510.exe.config
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\bin\Release\Example_2510.exe
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\bin\Release\Example_2510.pdb
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\obj\Release\Example_2510.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\obj\Release\Example_2510.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\obj\Release\Example_2510.exe
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2510\obj\Release\Example_2510.pdb

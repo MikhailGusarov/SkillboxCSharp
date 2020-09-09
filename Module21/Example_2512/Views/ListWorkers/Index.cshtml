@@ -1,0 +1,30 @@
+﻿@using Example_2512.Models
+@model List<Worker>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/style.css" type="text/css" />
+
+</head>
+<body>
+    <table class="simple-little-table" cellspacing='0'>
+        <tr style="font-size:20px;">
+            <th>Компания</th>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Оплата труда</th>
+        </tr>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <th>@Model[i].Company</th>
+                <th>@Model[i].Name</th>
+                <th>@Model[i].Age</th>
+                <th>$ @Model[i].Salary</th>
+
+            </tr>
+        }
+    </table>
+</body>
+</html>

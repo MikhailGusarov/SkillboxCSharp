@@ -1,0 +1,23 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Index Page</title>
+</head>
+<body>
+
+    @{
+        Car car = new Car() { CarMark = "Audi", CarModel = "Q8", CarEngine = 2 };
+    }
+
+    <p>@InjectTimeService.GetData()<p>
+
+    <p>
+        [ <a href="/Home/About">About</a> ]
+        [ <a href="/Home/Contact">Contact</a> ]
+        [ <a href="/Home/Feedback">Feedback</a> ]
+        [ Index ]
+
+    </p>
+
+</body>
+</html>

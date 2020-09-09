@@ -1,0 +1,14 @@
+D:\ Work\SkillBox\CodeSource\Example_1241\obj\Debug\Example_1241.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Example_1241\obj\Debug\Example_1241.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Example_1241\bin\Debug\Example_1241.exe.config
+D:\ Work\SkillBox\CodeSource\Example_1241\bin\Debug\Example_1241.exe
+D:\ Work\SkillBox\CodeSource\Example_1241\bin\Debug\Example_1241.pdb
+D:\ Work\SkillBox\CodeSource\Example_1241\obj\Debug\Example_1241.exe
+D:\ Work\SkillBox\CodeSource\Example_1241\obj\Debug\Example_1241.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\bin\Debug\Example_1241.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\bin\Debug\Example_1241.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\bin\Debug\Example_1241.pdb
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\obj\Debug\Example_1241.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\obj\Debug\Example_1241.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\obj\Debug\Example_1241.exe
+D:\ Work\SkillBox\CodeSource\Theme_12\Example_1241\obj\Debug\Example_1241.pdb

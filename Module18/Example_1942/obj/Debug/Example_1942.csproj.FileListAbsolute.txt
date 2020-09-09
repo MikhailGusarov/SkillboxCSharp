@@ -1,0 +1,13 @@
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\bin\Debug\Example_1942.exe.config
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\bin\Debug\Example_1942.exe
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\bin\Debug\Example_1942.pdb
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\bin\Debug\Example_1942_Logic.dll
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\bin\Debug\Example_1942_Logic.pdb
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.mainForm.resources
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.Properties.Resources.resources
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.csproj.GenerateResource.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.csproj.CopyComplete
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.exe
+D:\Work\SkillBox\CodeSource\CodeSource\Theme_19\Example_1942\obj\Debug\Example_1942.pdb

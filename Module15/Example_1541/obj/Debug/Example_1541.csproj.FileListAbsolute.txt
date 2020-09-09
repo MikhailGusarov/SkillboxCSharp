@@ -1,0 +1,10 @@
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\bin\Debug\Example_1541.exe.config
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\bin\Debug\Example_1541.exe
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\bin\Debug\Example_1541.pdb
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\bin\Debug\Example_1541_ClassLibrary.dll
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\bin\Debug\Example_1541_ClassLibrary.pdb
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\obj\Debug\Example_1541.csprojAssemblyReference.cache
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\obj\Debug\Example_1541.csproj.CoreCompileInputs.cache
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\obj\Debug\Example_1541.csproj.CopyComplete
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\obj\Debug\Example_1541.exe
+D:\ Work\SkillBox\CodeSource\Theme_15\Example_1541\obj\Debug\Example_1541.pdb

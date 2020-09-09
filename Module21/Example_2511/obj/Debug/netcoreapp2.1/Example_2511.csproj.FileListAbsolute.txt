@@ -1,0 +1,14 @@
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\bin\Debug\netcoreapp2.1\Example_2511.deps.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\bin\Debug\netcoreapp2.1\Example_2511.runtimeconfig.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\bin\Debug\netcoreapp2.1\Example_2511.runtimeconfig.dev.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\bin\Debug\netcoreapp2.1\Example_2511.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.RazorAssemblyInfo.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.RazorAssemblyInfo.cs
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.AssemblyInfoInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.AssemblyInfo.cs
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.RazorTargetAssemblyInfo.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\bin\Debug\netcoreapp2.1\Example_2511.pdb
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme25\Example_2510\Example_2511\obj\Debug\netcoreapp2.1\Example_2511.pdb

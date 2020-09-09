@@ -1,0 +1,14 @@
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\bin\Debug\netcoreapp2.1\Example_2425.deps.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\bin\Debug\netcoreapp2.1\Example_2425.runtimeconfig.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\bin\Debug\netcoreapp2.1\Example_2425.runtimeconfig.dev.json
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\bin\Debug\netcoreapp2.1\Example_2425.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\bin\Debug\netcoreapp2.1\Example_2425.pdb
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.csprojAssemblyReference.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.csproj.CoreCompileInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.RazorAssemblyInfo.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.RazorAssemblyInfo.cs
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.AssemblyInfoInputs.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.AssemblyInfo.cs
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.RazorTargetAssemblyInfo.cache
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.dll
+D:\Work\SkillBox\CodeSource\CodeSource Theme24\Theme_24\Example_2425\obj\Debug\netcoreapp2.1\Example_2425.pdb

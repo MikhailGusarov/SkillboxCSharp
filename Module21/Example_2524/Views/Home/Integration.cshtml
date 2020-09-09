@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+    ViewData["Title"] = "Integration";
+}
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+        function Hi() {
+            alert("Hello ASP.Net Core Integration.cshtml");
+        }
+    </script>
+
+</head>
+<body>
+
+    <input type="button" value="Кнопка Integration" onclick="Hi()" />
+
+    @*@Html.Partial(@"IntegrationPart")*@
+
+    @*@Html.Partial(@"IntegrationPart", null)*@
+
+    @await Html.PartialAsync(@"IntegrationPart", null)
+
+
+</body>
+</html>
