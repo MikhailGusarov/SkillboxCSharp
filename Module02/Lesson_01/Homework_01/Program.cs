@@ -11,7 +11,7 @@ namespace Homework_01
         static void Main(string[] args)
         {
             // Создание базы данных из 20 сотрудников
-            Repository repository = new Repository(30);
+            Repository repository = new Repository(20);
 
             // Печать в консоль всех сотрудников
             repository.Print("База данных до преобразования");
@@ -42,7 +42,7 @@ namespace Homework_01
             // ** Задание 3. Создать отдел из 50 сотрудников и реализовать увольнение работников
             //               чья зарплата превышает 30000руб
 
-
+            Console.ReadKey();
 
             #endregion
 
