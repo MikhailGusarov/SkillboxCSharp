@@ -47,14 +47,9 @@ namespace Homework_Theme_01
             // Подсчет среднего кол-ва баллов
             double scoresAvg = Convert.ToDouble(scoresHistory + scoresMath + scoresRus) / 3;
 
-            Console.WriteLine("Имя: {0}\nВозраст: {1}\nРост: {2}\nКол-во баллов:\n - История: {3}\n - Математика: {4}\n - Русский язык: {5}\nСредний балл: {6:0.00}",
-                firstName,
-                age,
-                height,
-                scoresHistory,
-                scoresMath,
-                scoresRus,
-                scoresAvg);
+            Console.WriteLine(
+                $"Имя: {firstName}\nВозраст: {age}\nРост: {height}" +
+                $"\nКол-во баллов:\n - История: {scoresHistory}\n - Математика: {scoresMath}\n - Русский язык: {scoresRus}\nСредний балл: {scoresAvg:0.00}");
             Console.ReadKey();
 
         }
