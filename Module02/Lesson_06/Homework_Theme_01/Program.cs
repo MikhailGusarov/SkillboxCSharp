@@ -36,14 +36,16 @@ namespace Homework_Theme_01
             // 5. В качестве бонусной части, за дополнительную оплату $50, заказчик просит реализовать 
             //    возможность вывода данных в центре консоли.
 
-            
+            // Данные ученика
             string firstName = "Жорик";
             byte age = 45;
             byte height = 195;
             byte scoresHistory = 95;
             byte scoresMath = 44;
             byte scoresRus = 80;
-            
+
+            // Подсчет среднего кол-ва баллов
+            double scoresAvg = Convert.ToDouble(scoresHistory + scoresMath + scoresRus) / 3;
 
         }
     }
