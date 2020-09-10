@@ -42,10 +42,13 @@ namespace Homework_Theme_01
             byte height = 195;
             byte scoresHistory = 95;
             byte scoresMath = 44;
-            byte scoresRus = 80;
+            byte scoresRus = 81;
 
             // Подсчет среднего кол-ва баллов
             double scoresAvg = Convert.ToDouble(scoresHistory + scoresMath + scoresRus) / 3;
+
+            Console.WriteLine("Имя: " + firstName + "\nВозраст: " + age + "\nРост: " + height + "\nКол-во баллов:\n - История: " + scoresHistory + "\n - Математика: " + scoresMath + "\n - Русский язык: " + scoresRus + "\nСредний балл: " + scoresAvg);
+            Console.ReadKey();
 
         }
     }
