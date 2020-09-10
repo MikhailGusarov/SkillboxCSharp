@@ -53,7 +53,11 @@ namespace Homework_Theme_03
             Console.Write("Введите никнейм второго игрока: ");
             string user2 = Console.ReadLine();
 
-
+            // Генерация и вывод случайного числа
+            Random rand = new Random();
+            int getNumber = rand.Next(12, 121);
+            Console.WriteLine($"Загадано число: {getNumber}");
+            
 
             Console.ReadKey();
             
