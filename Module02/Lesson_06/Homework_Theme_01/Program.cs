@@ -37,6 +37,13 @@ namespace Homework_Theme_01
             //    возможность вывода данных в центре консоли.
 
             
+            string firstName = "Жорик";
+            byte age = 45;
+            byte height = 195;
+            byte scoresHistory = 95;
+            byte scoresMath = 44;
+            byte scoresRus = 80;
+            
 
         }
     }
