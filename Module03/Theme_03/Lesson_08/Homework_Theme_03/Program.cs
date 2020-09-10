@@ -75,20 +75,28 @@ namespace Homework_Theme_03
                 userNumber %= (users.Length);
 
                 // Ход игрока userNumber
-                Console.Write($"{users[userNumber]} введите число от 1 до 4: ");
-                userTry = Convert.ToInt32(Console.ReadLine());
+                do
+                {
+                    Console.Write($"{users[userNumber]} введите число от 1 до 4: ");
+                    userTry = Convert.ToInt32(Console.ReadLine());
+                    if (userTry < 1 || userTry > 4) Console.WriteLine("Некорректно");
 
+                } while (userTry < 1 || userTry > 4);
 
                 getNumber -= userTry;
 
                 if (getNumber <= 0)
                 {
                     Console.WriteLine($"{users[userNumber]} победил. Может реванш(да|нет)?");
-                    revenge = Console.ReadLine();
+                    do
+                    {
+                        revenge = Console.ReadLine();
+                        if (revenge != "да" && revenge != "нет") Console.WriteLine("Некорректно");
+                    } while (revenge != "да" && revenge != "нет");
+                    
                     if (revenge == "да")
                     {
                         getNumber = rand.Next(12, 121);
-                        Console.WriteLine($"Число: {getNumber}");
                         revenge = "";
                         continue;
                     }
@@ -96,10 +104,6 @@ namespace Homework_Theme_03
                     {
                         Console.WriteLine("Спасибо за игру!");
                         break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Неккорекное значение. Введите да или нет");
                     }
                 }
             }
