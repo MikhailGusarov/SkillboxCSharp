@@ -47,6 +47,9 @@ namespace Homework_Theme_03
             //
             // User2 победил!
             #endregion
+
+            
+
             // Получение никнеймов игроков
             Console.Write("Введите никнейм первого игрока: ");
             string user1 = Console.ReadLine();
@@ -56,12 +59,74 @@ namespace Homework_Theme_03
             // Генерация и вывод случайного числа
             Random rand = new Random();
             int getNumber = rand.Next(12, 121);
-            Console.WriteLine($"Загадано число: {getNumber}");
-            
+            Console.WriteLine($"Число: {getNumber}");
 
+            int userTry;
+            string revenge = "";
+
+            while (true)
+            {
+                // Ход игрока 1
+                Console.Write($"{user1} введите число от 1 до 4: ");
+                userTry = Convert.ToInt32(Console.ReadLine());
+
+                getNumber -= userTry;
+
+                if (getNumber <= 0)
+                {
+                    Console.WriteLine($"{user1} победил. Может реванш(да|нет)?");
+                    revenge = Console.ReadLine();
+                    if (revenge == "да")
+                    {
+                        getNumber = rand.Next(12, 121);
+                        Console.WriteLine($"Число: {getNumber}");
+                        revenge = "";
+                        continue;
+                    }
+                    else if (revenge == "нет")
+                    {
+                        Console.WriteLine("Спасибо за игру!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Неккорекное значение. Введите да или нет");
+                    }
+                }
+
+                Console.WriteLine($"Число: {getNumber}");
+
+                // ход игрока 2
+                Console.Write($"{user2} введите число от 1 до 4: ");
+                userTry = Convert.ToInt32(Console.ReadLine());
+
+                getNumber -= userTry;
+
+                if (getNumber <= 0)
+                {
+                    Console.WriteLine($"{user2} победил. Может реванш(да|нет)?");
+                    revenge = Console.ReadLine();
+                    if (revenge == "да")
+                    {
+                        getNumber = rand.Next(12, 121);
+                        Console.WriteLine($"Число: {getNumber}");
+                        revenge = "";
+                        continue;
+                    }
+                    else if (revenge == "нет")
+                    {
+                        Console.WriteLine("Спасибо за игру!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Неккорекное значение. Введите да или нет");
+                    }
+                }
+
+                Console.WriteLine($"Число: {getNumber}");
+            }
             Console.ReadKey();
-            
-
         }
     }
 }
