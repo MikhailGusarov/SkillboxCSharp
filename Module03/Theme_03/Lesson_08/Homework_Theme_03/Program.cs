@@ -58,9 +58,18 @@ namespace Homework_Theme_03
                 users[i] = Console.ReadLine();
             }
 
+            // конечное случайное число от пользователя
+            int getNumberEnd = 12;
+            do
+            {
+                Console.Write("Укажите размер диапазона случайного числа(больше 12): ");
+                getNumberEnd = Convert.ToInt32(Console.ReadLine());
+                if (getNumberEnd < 12) Console.WriteLine("Число должно быть больше 12");
+            } while (getNumberEnd < 12);
+
             // Генерация и вывод случайного числа
             Random rand = new Random();
-            int getNumber = rand.Next(12, 121);
+            int getNumber = rand.Next(12, getNumberEnd);
 
             int userTry;
             string revenge = "";
@@ -96,7 +105,7 @@ namespace Homework_Theme_03
                     
                     if (revenge == "да")
                     {
-                        getNumber = rand.Next(12, 121);
+                        getNumber = rand.Next(12, getNumberEnd);
                         revenge = "";
                         continue;
                     }
