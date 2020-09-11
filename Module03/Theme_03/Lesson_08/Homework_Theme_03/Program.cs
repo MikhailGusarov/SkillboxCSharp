@@ -74,6 +74,7 @@ namespace Homework_Theme_03
             int userTry;
             string revenge = "";
             int userNumber = -1;
+            string correntUser = "";
 
             while (true)
             {
@@ -82,21 +83,46 @@ namespace Homework_Theme_03
                 // переход к следующему игроку
                 userNumber++;
                 userNumber %= (users.Length);
-
-                // Ход игрока userNumber
-                do
+                if(users.Length == 1)
                 {
-                    Console.Write($"{users[userNumber]} введите число от 1 до 4: ");
-                    userTry = Convert.ToInt32(Console.ReadLine());
-                    if (userTry < 1 || userTry > 4) Console.WriteLine("Некорректно");
+                    if (correntUser == "" || correntUser != users[userNumber])
+                    {
+                        correntUser = users[userNumber];
+                    }
+                    else
+                    {
+                        correntUser = "компьютер";
+                    }
+                }
+                else
+                {
+                    correntUser = users[userNumber];
+                }
+                
+                
+                if(correntUser != "компьютер")
+                {
+                    // Ход игрока userNumber
+                    do
+                    {
+                        Console.Write($"{correntUser} введите число от 1 до 4: ");
+                        userTry = Convert.ToInt32(Console.ReadLine());
+                        if (userTry < 1 || userTry > 4) Console.WriteLine("Некорректно");
 
-                } while (userTry < 1 || userTry > 4);
-
+                    } while (userTry < 1 || userTry > 4);
+                }
+                else
+                {
+                    Console.WriteLine("Ходит компьютер");
+                    userTry = getNumber - 4 <= 0 ? getNumber : rand.Next(1, 5);
+                    Console.WriteLine($"Компьютер ввел число {userTry}");
+                }
+                
                 getNumber -= userTry;
 
                 if (getNumber <= 0)
                 {
-                    Console.WriteLine($"{users[userNumber]} победил. Может реванш(да|нет)?");
+                    Console.WriteLine($"{correntUser} победил. Может реванш(да|нет)?");
                     do
                     {
                         revenge = Console.ReadLine();
