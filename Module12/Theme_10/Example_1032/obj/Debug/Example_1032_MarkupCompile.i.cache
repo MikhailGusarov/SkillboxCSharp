@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\ Work\SkillBox\CodeSource\Theme_10\Example_1032\obj\Debug\
+C:\SkillboxCSharp\Module12\Theme_10\Example_1032\obj\Debug\
 Example_1032
 none
 false
 DEBUG;TRACE
-D:\ Work\SkillBox\CodeSource\Theme_10\Example_1032\App.xaml
+C:\SkillboxCSharp\Module12\Theme_10\Example_1032\App.xaml
 11151548125
 
-9387467523
+979398193
 13-1662647192
 MainWindow.xaml;
 

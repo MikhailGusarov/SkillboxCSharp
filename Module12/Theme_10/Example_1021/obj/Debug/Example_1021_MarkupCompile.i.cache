@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ Work\SkillBox\CodeSource\Theme_10\Example_1021\obj\Debug\
+C:\SkillboxCSharp\Module12\Theme_10\Example_1021\obj\Debug\
 Example_1021
 none
 false
 DEBUG;TRACE
-D:\ Work\SkillBox\CodeSource\Theme_10\Example_1021\App.xaml
+C:\SkillboxCSharp\Module12\Theme_10\Example_1021\App.xaml
 5179291796
 
-131286489199
+13978419869
 13-1662647192
 Window1.xaml;WindowCanvas.xaml;WindowGrid.xaml;WindowGridSplitter.xaml;WindowStackPanel.xaml;
 
-False
+True
 

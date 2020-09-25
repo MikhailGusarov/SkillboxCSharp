@@ -43,6 +43,45 @@ namespace Homework_Theme_04
             // Месяцев с положительной прибылью: 10
             #endregion
 
+            int[] income = new int[12];
+            int[] expence = new int[12];
+            int[] profit = new int[12];
+            Random rand = new Random();
+            Console.WriteLine("Месяц      Доход, тыс. руб.  Расход, тыс. руб.     Прибыль, тыс. руб.");
+            for (int i = 0; i < income.Length; i++)
+            {
+                income[i] = rand.Next(6, 30) * 10000;
+                expence[i] = rand.Next(6, 20) * 10000;
+                profit[i] = income[i] - expence[i];
+                Console.WriteLine($"{i + 1,5} {income[i], 21} {expence[i],18} {profit[i],22}");
+            }
+            int positiveMonth = 0;
+            foreach (int profitMonth in profit)
+            {
+                positiveMonth += profitMonth > 0 ? 1 : 0; 
+            }
+            Console.WriteLine($"Месяцев с положительной прибылью: {positiveMonth}");
+
+            string fallProfit = "";
+            int[] profitCopy = new int[12];
+            profit.CopyTo(profitCopy, 0);
+            for (int i = 0; i < 3; i++)
+            {
+                int minimal = profitCopy.Min();
+                for (int j = 0; j < profitCopy.Length; j++)
+                {
+                    if(profitCopy[j] == minimal)
+                    {
+                        fallProfit += Convert.ToString(j + 1) + ", ";
+                        profitCopy[j] = int.MaxValue;
+                    }
+                }
+            }
+            fallProfit = fallProfit.Substring(0, fallProfit.Length - 2);
+            Console.WriteLine($"Худшая прибыль в месяцах: {fallProfit}");
+            Console.ReadKey();
+
+
 
 
 

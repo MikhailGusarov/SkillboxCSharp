@@ -5,3 +5,6 @@ D:\ Work\SkillBox\CodeSource\Theme_16\Example_1611\obj\Debug\Example_1611.cspro
 D:\ Work\SkillBox\CodeSource\Theme_16\Example_1611\obj\Debug\Example_1611.csproj.CoreCompileInputs.cache
 D:\ Work\SkillBox\CodeSource\Theme_16\Example_1611\obj\Debug\Example_1611.exe
 D:\ Work\SkillBox\CodeSource\Theme_16\Example_1611\obj\Debug\Example_1611.pdb
+C:\SkillboxCSharp\Module16\Example_1611\bin\Debug\Example_1611.exe.config
+C:\SkillboxCSharp\Module16\Example_1611\obj\Debug\Example_1611.exe
+C:\SkillboxCSharp\Module16\Example_1611\obj\Debug\Example_1611.pdb

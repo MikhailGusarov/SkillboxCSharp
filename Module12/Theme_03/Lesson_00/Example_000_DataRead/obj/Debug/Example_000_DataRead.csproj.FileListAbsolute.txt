@@ -5,3 +5,6 @@ D:\ Work\SkillBox\CodeSource\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\
 D:\ Work\SkillBox\CodeSource\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\Example_000_DataRead.csproj.CoreCompileInputs.cache
 D:\ Work\SkillBox\CodeSource\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\Example_000_DataRead.exe
 D:\ Work\SkillBox\CodeSource\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\Example_000_DataRead.pdb
+C:\SkillboxCSharp\Module12\Theme_03\Lesson_00\Example_000_DataRead\bin\Debug\Example_000_DataRead.exe.config
+C:\SkillboxCSharp\Module12\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\Example_000_DataRead.exe
+C:\SkillboxCSharp\Module12\Theme_03\Lesson_00\Example_000_DataRead\obj\Debug\Example_000_DataRead.pdb
