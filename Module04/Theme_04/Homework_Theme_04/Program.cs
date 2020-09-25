@@ -42,45 +42,45 @@ namespace Homework_Theme_04
             // Худшая прибыль в месяцах: 7, 4, 1, 5, 12
             // Месяцев с положительной прибылью: 10
             #endregion
+            #region Решение 1
+            //int[] income = new int[12];
+            //int[] expence = new int[12];
+            //int[] profit = new int[12];
+            //Random rand = new Random();
+            //Console.WriteLine("Месяц      Доход, тыс. руб.  Расход, тыс. руб.     Прибыль, тыс. руб.");
+            //for (int i = 0; i < income.Length; i++)
+            //{
+            //    income[i] = rand.Next(6, 30) * 10000;
+            //    expence[i] = rand.Next(6, 20) * 10000;
+            //    profit[i] = income[i] - expence[i];
+            //    Console.WriteLine($"{i + 1,5} {income[i], 21} {expence[i],18} {profit[i],22}");
+            //}
+            //int positiveMonth = 0;
+            //foreach (int profitMonth in profit)
+            //{
+            //    positiveMonth += profitMonth > 0 ? 1 : 0; 
+            //}
+            //Console.WriteLine($"Месяцев с положительной прибылью: {positiveMonth}");
 
-            int[] income = new int[12];
-            int[] expence = new int[12];
-            int[] profit = new int[12];
-            Random rand = new Random();
-            Console.WriteLine("Месяц      Доход, тыс. руб.  Расход, тыс. руб.     Прибыль, тыс. руб.");
-            for (int i = 0; i < income.Length; i++)
-            {
-                income[i] = rand.Next(6, 30) * 10000;
-                expence[i] = rand.Next(6, 20) * 10000;
-                profit[i] = income[i] - expence[i];
-                Console.WriteLine($"{i + 1,5} {income[i], 21} {expence[i],18} {profit[i],22}");
-            }
-            int positiveMonth = 0;
-            foreach (int profitMonth in profit)
-            {
-                positiveMonth += profitMonth > 0 ? 1 : 0; 
-            }
-            Console.WriteLine($"Месяцев с положительной прибылью: {positiveMonth}");
-
-            string fallProfit = "";
-            int[] profitCopy = new int[12];
-            profit.CopyTo(profitCopy, 0);
-            for (int i = 0; i < 3; i++)
-            {
-                int minimal = profitCopy.Min();
-                for (int j = 0; j < profitCopy.Length; j++)
-                {
-                    if(profitCopy[j] == minimal)
-                    {
-                        fallProfit += Convert.ToString(j + 1) + ", ";
-                        profitCopy[j] = int.MaxValue;
-                    }
-                }
-            }
-            fallProfit = fallProfit.Substring(0, fallProfit.Length - 2);
-            Console.WriteLine($"Худшая прибыль в месяцах: {fallProfit}");
-            Console.ReadKey();
-
+            //string fallProfit = "";
+            //int[] profitCopy = new int[12];
+            //profit.CopyTo(profitCopy, 0);
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    int minimal = profitCopy.Min();
+            //    for (int j = 0; j < profitCopy.Length; j++)
+            //    {
+            //        if(profitCopy[j] == minimal)
+            //        {
+            //            fallProfit += Convert.ToString(j + 1) + ", ";
+            //            profitCopy[j] = int.MaxValue;
+            //        }
+            //    }
+            //}
+            //fallProfit = fallProfit.Substring(0, fallProfit.Length - 2);
+            //Console.WriteLine($"Худшая прибыль в месяцах: {fallProfit}");
+            //Console.ReadKey();
+            #endregion
 
 
 
@@ -112,8 +112,27 @@ namespace Homework_Theme_04
             // 
             // Справка: https://ru.wikipedia.org/wiki/Треугольник_Паскаля
 
+
             #endregion
 
+
+
+            uint N = 25;
+            ulong[][] pascalTriangle = new ulong[N][];
+
+            for (uint i = 0; i < N; i++)
+            {
+                pascalTriangle[i] = new ulong[i + 1];
+                for (uint j = 0; j < pascalTriangle[i].Length; j++)
+                {
+                    pascalTriangle[i][j] = factotial(i) / (factotial(j) * factotial(i - j));
+                    Console.Write($"{pascalTriangle[i][j],5}");
+                }
+                Console.WriteLine();
+            }
+
+
+            Console.ReadKey();
             #region ТЗ 3
             // 
             // * Задание 3.1
@@ -170,5 +189,16 @@ namespace Homework_Theme_04
 
             #endregion
         }
+        static ulong factotial(uint number)
+        {
+            ulong factorial = 1;
+            while (number > 1)
+            {
+                factorial *= number;
+                number--;
+            }
+            return factorial;
+        }
+
     }
 }
