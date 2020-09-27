@@ -98,6 +98,7 @@ namespace Homework_Theme_04
             //             1       5      10      10       5       1
             //         1       6      15      20      15       6       1
             //     1       7      21      35      35       21      7       1
+            //   1     8      28      56      70      56       28     8       1
             //                                                              
             //                                                              
             // Простое решение:                                                             
@@ -114,19 +115,29 @@ namespace Homework_Theme_04
 
 
             #endregion
+          
 
 
+            int N = 25;
+            int[][] pascalTriangle = new int[N][];
 
-            uint N = 25;
-            ulong[][] pascalTriangle = new ulong[N][];
+            pascalTriangle[0] = new int[1] { 1 };
+            Console.WriteLine($"{1,8}");
 
-            for (uint i = 0; i < N; i++)
+            for (int i = 1; i < N; i++)
             {
-                pascalTriangle[i] = new ulong[i + 1];
-                for (uint j = 0; j < pascalTriangle[i].Length; j++)
+                pascalTriangle[i] = new int[i + 1];
+                for (int j = 0; j < pascalTriangle[i].Length; j++)
                 {
-                    pascalTriangle[i][j] = factotial(i) / (factotial(j) * factotial(i - j));
-                    Console.Write($"{pascalTriangle[i][j],5}");
+                    if (j == 0 || j == pascalTriangle[i].Length - 1)
+                    {
+                        pascalTriangle[i][j] = 1;
+                    }
+                    else
+                    {
+                        pascalTriangle[i][j] = pascalTriangle[i-1][j-1] + pascalTriangle[i - 1][j];
+                    }
+                    Console.Write($"{pascalTriangle[i][j],8}");
                 }
                 Console.WriteLine();
             }
@@ -189,16 +200,7 @@ namespace Homework_Theme_04
 
             #endregion
         }
-        static ulong factotial(uint number)
-        {
-            ulong factorial = 1;
-            while (number > 1)
-            {
-                factorial *= number;
-                number--;
-            }
-            return factorial;
-        }
+        
 
     }
 }

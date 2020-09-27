@@ -4,3 +4,10 @@ C:\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\bin\Debug\Homework_Theme_0
 C:\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\bin\Debug\Homework_Theme_04.pdb
 C:\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.exe
 C:\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.pdb
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\bin\Debug\Homework_Theme_04.exe.config
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\bin\Debug\Homework_Theme_04.exe
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\bin\Debug\Homework_Theme_04.pdb
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.csprojAssemblyReference.cache
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.csproj.CoreCompileInputs.cache
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.exe
+D:\projects\SkillboxCSharp\Module04\Theme_04\Homework_Theme_04\obj\Debug\Homework_Theme_04.pdb
