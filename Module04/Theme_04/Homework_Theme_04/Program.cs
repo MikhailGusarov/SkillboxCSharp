@@ -115,36 +115,38 @@ namespace Homework_Theme_04
 
 
             #endregion
-          
+
+            #region Решение 2
+
+            //int N = 25;
+            //int[][] pascalTriangle = new int[N][];
+
+            //pascalTriangle[0] = new int[1] { 1 };
+            //Console.WriteLine($"{1,8}");
+
+            //for (int i = 1; i < N; i++)
+            //{
+            //    pascalTriangle[i] = new int[i + 1];
+            //    for (int j = 0; j < pascalTriangle[i].Length; j++)
+            //    {
+            //        if (j == 0 || j == pascalTriangle[i].Length - 1)
+            //        {
+            //            pascalTriangle[i][j] = 1;
+            //        }
+            //        else
+            //        {
+            //            pascalTriangle[i][j] = pascalTriangle[i-1][j-1] + pascalTriangle[i - 1][j];
+            //        }
+            //        Console.Write($"{pascalTriangle[i][j],8}");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
-            int N = 25;
-            int[][] pascalTriangle = new int[N][];
+            //Console.ReadKey();
+            #endregion
 
-            pascalTriangle[0] = new int[1] { 1 };
-            Console.WriteLine($"{1,8}");
-
-            for (int i = 1; i < N; i++)
-            {
-                pascalTriangle[i] = new int[i + 1];
-                for (int j = 0; j < pascalTriangle[i].Length; j++)
-                {
-                    if (j == 0 || j == pascalTriangle[i].Length - 1)
-                    {
-                        pascalTriangle[i][j] = 1;
-                    }
-                    else
-                    {
-                        pascalTriangle[i][j] = pascalTriangle[i-1][j-1] + pascalTriangle[i - 1][j];
-                    }
-                    Console.Write($"{pascalTriangle[i][j],8}");
-                }
-                Console.WriteLine();
-            }
-
-
-            Console.ReadKey();
-            #region ТЗ 3
+            #region ТЗ 3.1
             // 
             // * Задание 3.1
             // Заказчику требуется приложение позволяющщее умножать математическую матрицу на число
@@ -161,6 +163,50 @@ namespace Homework_Theme_04
             //  5 х |  4  5  7  | = | 20  25  35  |
             //      |  5  3  1  |   | 25  15   5  |
             //
+            #endregion
+            Console.Write("Введите кол-во строк матрицы: ");
+            int lenghtMatrix = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите кол-во столбцов матрицы: ");
+            int widthMatrix = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите число: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            Random rand = new Random();
+            
+            int[,] matrix = new int[lenghtMatrix, widthMatrix];
+            int[,] resultMatrix = new int[lenghtMatrix, widthMatrix];
+            for (int i = 0; i < lenghtMatrix; i++)
+            {
+                if (i == lenghtMatrix / 2)
+                {
+                    Console.Write($"{number,4} X |");
+                }
+                else
+                {
+                    Console.Write("       |");
+                }
+                for(int j = 0; j < widthMatrix; j++)
+                {
+                    matrix[i, j] = rand.Next(1, 9);
+                    Console.Write($"{matrix[i, j]} ");
+                }
+                if (i == lenghtMatrix / 2)
+                {
+                    Console.Write("| = |");
+                }
+                else
+                {
+                    Console.Write("|   |");
+                }
+                for (int j = 0; j < widthMatrix; j++)
+                {
+                    resultMatrix[i, j] = matrix[i, j] * number;
+                    Console.Write($"{resultMatrix[i, j], 3} ");
+                }
+                Console.WriteLine("|");
+            }
+            Console.ReadKey();
+            #region ТЗ 3.2
             //
             // ** Задание 3.2
             // Заказчику требуется приложение позволяющщее складывать и вычитать математические матрицы
@@ -180,6 +226,9 @@ namespace Homework_Theme_04
             //  |  4  5  7  | - |  2  5  6  | = |  2   0   1  |
             //  |  5  3  1  |   |  3  6  7  |   |  2  -3  -6  |
             //
+
+            #endregion
+            #region ТЗ 3.3
             // *** Задание 3.3
             // Заказчику требуется приложение позволяющщее перемножать математические матрицы
             // Справка https://ru.wikipedia.org/wiki/Матрица_(математика)
@@ -200,7 +249,7 @@ namespace Homework_Theme_04
 
             #endregion
         }
-        
+
 
     }
 }
