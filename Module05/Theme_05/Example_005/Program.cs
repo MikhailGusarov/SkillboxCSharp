@@ -250,61 +250,61 @@ namespace Example_005
 
             #region Решение 1.3
 
-            Console.Write("Введите кол-во строк матрицы №1: ");
-            int lenght1Matrix = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите кол-во столбцов матрицы №1: ");
-            int width1Matrix = Convert.ToInt32(Console.ReadLine());
-            int lenght2Matrix = width1Matrix;
-            Console.Write("Введите кол-во столбцов матрицы №2: ");
-            int width2Matrix = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите кол-во строк матрицы №1: ");
+            //int lenght1Matrix = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Введите кол-во столбцов матрицы №1: ");
+            //int width1Matrix = Convert.ToInt32(Console.ReadLine());
+            //int lenght2Matrix = width1Matrix;
+            //Console.Write("Введите кол-во столбцов матрицы №2: ");
+            //int width2Matrix = Convert.ToInt32(Console.ReadLine());
 
-            Random rand = new Random();
+            //Random rand = new Random();
 
-            int[,] matrix1 = GenerateMatrix(lenght1Matrix, width1Matrix, rand);
-            int[,] matrix2 = GenerateMatrix(lenght2Matrix, width2Matrix, rand);
-            int[,] resultMatrix = MultiplicationMatrix(matrix1, matrix2);
+            //int[,] matrix1 = GenerateMatrix(lenght1Matrix, width1Matrix, rand);
+            //int[,] matrix2 = GenerateMatrix(lenght2Matrix, width2Matrix, rand);
+            //int[,] resultMatrix = MultiplicationMatrix(matrix1, matrix2);
 
-            for (int i = 0; i < lenght1Matrix; i++)
-            {
-                Console.Write("| ");
-                for (int j = 0; j < width1Matrix; j++)
-                {
-                    Console.Write($"{matrix1[i, j]} ");
-                }
-                Console.WriteLine("| ");
-            }
-            Console.WriteLine("");
-            Console.WriteLine("     X         ");
-            Console.WriteLine("");
-            for (int i = 0; i < lenght2Matrix; i++)
-            {
-                Console.Write("| ");
-                for (int j = 0; j < width2Matrix; j++)
-                {
-                    Console.Write($"{matrix2[i, j]} ");
-                }
-                Console.WriteLine("| ");
-            }
+            //for (int i = 0; i < lenght1Matrix; i++)
+            //{
+            //    Console.Write("| ");
+            //    for (int j = 0; j < width1Matrix; j++)
+            //    {
+            //        Console.Write($"{matrix1[i, j]} ");
+            //    }
+            //    Console.WriteLine("| ");
+            //}
+            //Console.WriteLine("");
+            //Console.WriteLine("     X         ");
+            //Console.WriteLine("");
+            //for (int i = 0; i < lenght2Matrix; i++)
+            //{
+            //    Console.Write("| ");
+            //    for (int j = 0; j < width2Matrix; j++)
+            //    {
+            //        Console.Write($"{matrix2[i, j]} ");
+            //    }
+            //    Console.WriteLine("| ");
+            //}
 
-            Console.WriteLine("");
-            Console.WriteLine("     =         ");
-            Console.WriteLine("");
+            //Console.WriteLine("");
+            //Console.WriteLine("     =         ");
+            //Console.WriteLine("");
 
-            for (int i = 0; i < lenght1Matrix; i++)
-            {
-                Console.Write("| ");
-                for (int j = 0; j < width2Matrix; j++)
-                {
-                    Console.Write($"{resultMatrix[i, j]} ");
-                }
-                Console.WriteLine("| ");
-            }
-            Console.ReadKey();
+            //for (int i = 0; i < lenght1Matrix; i++)
+            //{
+            //    Console.Write("| ");
+            //    for (int j = 0; j < width2Matrix; j++)
+            //    {
+            //        Console.Write($"{resultMatrix[i, j]} ");
+            //    }
+            //    Console.WriteLine("| ");
+            //}
+            //Console.ReadKey();
 
             #endregion
+            Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}");
+            Console.ReadKey();
         }
-
-
 
 
         #endregion
@@ -318,7 +318,32 @@ namespace Example_005
         // 1. Ответ: А
         // 2. ГГГГ, ДДДД
         #endregion
-        #region Решение 2
+        #region Решение 2.1
+
+        static string minWord(string words)
+        {
+            string result = words;
+            string word = "";
+            for (int i = 0; i < words.Length; i++)
+            {
+                if(words[i] == ' ' || words[i] == '.' || words[i] == ',')
+                {
+                    if(word.Length < result.Length && word != "")
+                    {
+                        result = word;
+
+                    }
+                    word = "";
+                }
+                else
+                {
+                    word += words[i];
+                }
+            }
+            return result;
+        }
+
+
         #endregion
         #region ТЗ 3
         //
