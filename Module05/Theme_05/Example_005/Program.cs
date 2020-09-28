@@ -9,6 +9,7 @@ namespace Example_005
 {
     class Program
     {
+        #region Решение 1
         /// <summary>
         /// Генерация двумерного массива случайными числами от 1 до 9
         /// </summary>
@@ -30,7 +31,6 @@ namespace Example_005
             return matrix;
 
         }
-
         /// <summary>
         /// Умножение числа на двумерный массив
         /// </summary>
@@ -69,7 +69,6 @@ namespace Example_005
             }
             return result;
         }
-
         /// <summary>
         /// Вычитание двух двумерных матриц
         /// </summary>
@@ -114,8 +113,212 @@ namespace Example_005
             }
             return result;
         }
+        #endregion
+        #region ТЗ 2
+        //
+        // Задание 2.
+        // 1. Создать метод, принимающий  текст и возвращающий слово, содержащее минимальное количество букв
+        // 2.* Создать метод, принимающий  текст и возвращающий слово(слова) с максимальным количеством букв 
+        // Примечание: слова в тексте могут быть разделены символами (пробелом, точкой, запятой) 
+        // Пример: Текст: "A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ"
+        // 1. Ответ: А
+        // 2. ГГГГ, ДДДД
+        #endregion
+        #region Решение 2
+
+        /// <summary>
+        /// метод, принимающий текст и возвращающий слово, содержащее минимальное количество букв
+        /// </summary>
+        /// <param name="words">исходное слово</param>
+        /// <returns>минимальное слово</returns>
+        static string minWord(string words)
+        {
+            string result = words;
+            string word = "";
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] == ' ' || words[i] == '.' || words[i] == ',')
+                {
+                    if (word.Length < result.Length && word != "")
+                    {
+                        result = word;
+
+                    }
+                    word = "";
+                }
+                else
+                {
+                    word += words[i];
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// метод, принимающий текст и возвращающий слова, содержащее максимальное количество букв
+        /// </summary>
+        /// <param name="words">исходное слово</param>
+        /// <returns>максимальные слова</returns>
+        static string maxWords(string words)
+        {
+            string result = "";
+            string resultWord = "";
+            string word = "";
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] == ' ' || words[i] == '.' || words[i] == ',')
+                {
+                    if (word.Length > resultWord.Length && word != "")
+                    {
+                        result = word;
+                        resultWord = word;
+
+                    }
+                    else if (word.Length == resultWord.Length)
+                    {
+                        result += " " + word;
+                    }
+                    word = "";
+                }
+                else
+                {
+                    word += words[i];
+                }
+            }
+            return result;
+        }
+
+        #endregion
+        #region ТЗ 3
+        //
+        // Задание 3. Создать метод, принимающий текст. 
+        // Результатом работы метода должен быть новый текст, в котором
+        // удалены все кратные рядом стоящие символы, оставив по одному 
+        // Пример: ПППОООГГГООООДДДААА >>> ПОГОДА
+        // Пример: Ххххоооорррооошшшиий деееннннь >>> хороший день
+        // 
 
 
+
+        #endregion
+        #region Решение 3
+
+        /// <summary>
+        /// Метод удаляет дублирующие символы идущие подряд
+        /// </summary>
+        /// <param name="startWord">Исходное слово</param>
+        /// <returns>Получивщееся слово</returns>
+        static string deleteDublicateSymbols(string startWord)
+        {
+            string result = Convert.ToString(startWord[0]);
+            for (int i = 1; i < startWord.Length; i++)
+            {
+                if (startWord.ToUpper()[i] == startWord.ToUpper()[i - 1])
+                {
+                    continue;
+                }
+                else
+                {
+                    result += startWord[i];
+                }
+            }
+            return result;
+        }
+
+        #endregion
+        #region ТЗ 4
+        // Задание 4. Написать метод принимающий некоторое количесво чисел, выяснить
+        // является заданная последовательность элементами арифметической или геометрической прогрессии
+        // 
+        // Примечание
+        //             http://ru.wikipedia.org/wiki/Арифметическая_прогрессия
+        //             http://ru.wikipedia.org/wiki/Геометрическая_прогрессия
+        //
+        #endregion
+        #region Решение 4
+
+        /// <summary>
+        /// Проверка на арифметическую прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsArithmeticProgression(params int[] args)
+        {
+            int d = args[1] - args[0];
+            for (int i = 2; i < args.Length; i++)
+            {
+                if (args[i] != args[0] + i * d)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        /// <summary>
+        /// Проверка на геометрическую прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsAGeometricProgression(params int[] args)
+        {
+            int q = args[1] / args[0];
+            for (int i = 2; i < args.Length; i++)
+            {
+                if (args[i] != args[i - 1] * q)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Проверка на прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsProgression(params int[] args)
+        {
+            return IsArithmeticProgression(args) || IsAGeometricProgression(args);
+        }
+
+        #endregion
+        #region ТЗ 5
+        // *Задание 5
+        // Вычислить, используя рекурсию, функцию Аккермана:
+        // A(2, 5), A(1, 2)
+        // A(n, m) = m + 1, если n = 0,
+        //         = A(n - 1, 1), если n <> 0, m = 0,
+        //         = A(n - 1, A(n, m - 1)), если n> 0, m > 0.
+        // 
+        // Весь код должен быть откоммментирован
+        #endregion
+        #region Решение 5
+
+        /// <summary>
+        /// Функция Аккермана
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="m"></param>
+        /// <returns></returns>
+        static int Ackermann(int n, int m)
+        {
+            if (n == 0)
+            {
+                return m + 1;
+            }
+            else if (n != 0 && m == 0)
+            {
+                return Ackermann(n - 1, 1);
+            }
+            else
+            {
+                return Ackermann(n - 1, Ackermann(n, m - 1));
+            }
+
+        }
+
+        #endregion
         static void Main(string[] args)
         {
 
@@ -129,7 +332,6 @@ namespace Example_005
             // 1.2. Создать метод, принимающий две матрицу, возвращающий их сумму
             // 1.3. Создать метод, принимающий две матрицу, возвращающий их произведение
             #endregion
-
             #region Решение 1
 
             #region Решение 1.1
@@ -300,6 +502,7 @@ namespace Example_005
             //Console.ReadKey();
 
             #endregion
+            #endregion
             #region Решение 2
 
             //Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.1
@@ -324,222 +527,12 @@ namespace Example_005
             //Console.ReadKey();
 
             #endregion
-
             #region Решение 5
             Console.WriteLine(Ackermann(2, 3));
             Console.ReadKey();
             #endregion
 
         }
-
-
-        #endregion
-        #region ТЗ 2
-        //
-        // Задание 2.
-        // 1. Создать метод, принимающий  текст и возвращающий слово, содержащее минимальное количество букв
-        // 2.* Создать метод, принимающий  текст и возвращающий слово(слова) с максимальным количеством букв 
-        // Примечание: слова в тексте могут быть разделены символами (пробелом, точкой, запятой) 
-        // Пример: Текст: "A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ"
-        // 1. Ответ: А
-        // 2. ГГГГ, ДДДД
-        #endregion
-        #region Решение 2
-
-        /// <summary>
-        /// метод, принимающий текст и возвращающий слово, содержащее минимальное количество букв
-        /// </summary>
-        /// <param name="words">исходное слово</param>
-        /// <returns>минимальное слово</returns>
-        static string minWord(string words)
-        {
-            string result = words;
-            string word = "";
-            for (int i = 0; i < words.Length; i++)
-            {
-                if(words[i] == ' ' || words[i] == '.' || words[i] == ',')
-                {
-                    if(word.Length < result.Length && word != "")
-                    {
-                        result = word;
-
-                    }
-                    word = "";
-                }
-                else
-                {
-                    word += words[i];
-                }
-            }
-            return result;
-        }
-        
-        /// <summary>
-        /// метод, принимающий текст и возвращающий слова, содержащее максимальное количество букв
-        /// </summary>
-        /// <param name="words">исходное слово</param>
-        /// <returns>максимальные слова</returns>
-        static string maxWords(string words)
-        {
-            string result = "";
-            string resultWord = "";
-            string word = "";
-            for (int i = 0; i < words.Length; i++)
-            {
-                if (words[i] == ' ' || words[i] == '.' || words[i] == ',')
-                {
-                    if (word.Length > resultWord.Length && word != "")
-                    {
-                        result = word;
-                        resultWord = word;
-
-                    }
-                    else if(word.Length == resultWord.Length){
-                        result += " " + word;
-                    }
-                    word = "";
-                }
-                else
-                {
-                    word += words[i];
-                }
-            }
-            return result;
-        }
-
-        #endregion
-        #region ТЗ 3
-        //
-        // Задание 3. Создать метод, принимающий текст. 
-        // Результатом работы метода должен быть новый текст, в котором
-        // удалены все кратные рядом стоящие символы, оставив по одному 
-        // Пример: ПППОООГГГООООДДДААА >>> ПОГОДА
-        // Пример: Ххххоооорррооошшшиий деееннннь >>> хороший день
-        // 
-
-
-
-        #endregion
-        #region Решение 3
-
-        /// <summary>
-        /// Метод удаляет дублирующие символы идущие подряд
-        /// </summary>
-        /// <param name="startWord">Исходное слово</param>
-        /// <returns>Получивщееся слово</returns>
-        static string deleteDublicateSymbols(string startWord)
-        {
-            string result = Convert.ToString(startWord[0]);
-            for (int i = 1; i < startWord.Length; i++)
-            {
-                if (startWord.ToUpper()[i] == startWord.ToUpper()[i - 1])
-                {
-                    continue;
-                }
-                else
-                {
-                    result += startWord[i];
-                }
-            }
-            return result;
-        }
-
-        #endregion
-        #region ТЗ 4
-        // Задание 4. Написать метод принимающий некоторое количесво чисел, выяснить
-        // является заданная последовательность элементами арифметической или геометрической прогрессии
-        // 
-        // Примечание
-        //             http://ru.wikipedia.org/wiki/Арифметическая_прогрессия
-        //             http://ru.wikipedia.org/wiki/Геометрическая_прогрессия
-        //
-        #endregion
-        #region Решение 4
-
-        /// <summary>
-        /// Проверка на арифметическую прогрессию
-        /// </summary>
-        /// <param name="args">список чисел</param>
-        /// <returns>да или нет</returns>
-        static bool IsArithmeticProgression(params int[] args)
-        {
-            int d = args[1] - args[0];
-            for (int i = 2; i < args.Length; i++)
-            {
-                if (args[i] != args[0] + i * d)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-        /// <summary>
-        /// Проверка на геометрическую прогрессию
-        /// </summary>
-        /// <param name="args">список чисел</param>
-        /// <returns>да или нет</returns>
-        static bool IsAGeometricProgression(params int[] args)
-        {
-            int q = args[1] / args[0];
-            for (int i = 2; i < args.Length; i++)
-            {
-                if (args[i] != args[i-1]  * q)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        /// <summary>
-        /// Проверка на прогрессию
-        /// </summary>
-        /// <param name="args">список чисел</param>
-        /// <returns>да или нет</returns>
-        static bool IsProgression(params int[] args)
-        {
-            return IsArithmeticProgression(args) || IsAGeometricProgression(args);
-        }
-
-        #endregion
-        #region ТЗ 5
-        // *Задание 5
-        // Вычислить, используя рекурсию, функцию Аккермана:
-        // A(2, 5), A(1, 2)
-        // A(n, m) = m + 1, если n = 0,
-        //         = A(n - 1, 1), если n <> 0, m = 0,
-        //         = A(n - 1, A(n, m - 1)), если n> 0, m > 0.
-        // 
-        // Весь код должен быть откоммментирован
-        #endregion
-
-        #region Решение 5
-        
-        /// <summary>
-        /// Функция Аккермана
-        /// </summary>
-        /// <param name="n"></param>
-        /// <param name="m"></param>
-        /// <returns></returns>
-        static int Ackermann(int n, int m)
-        {
-            if (n == 0)
-            {
-                return m + 1;
-            }
-            else if (n != 0 && m == 0)
-            {
-                return Ackermann(n - 1, 1);
-            }
-            else
-            {
-                return Ackermann(n - 1, Ackermann(n, m - 1));
-            }
-            
-        }
-
-        #endregion
-
     }
 }
 
