@@ -175,7 +175,6 @@ namespace Example_005
             //}
             //Console.ReadKey();
             #endregion
-
             #region Решение 1.2
             //Console.Write("Введите кол-во строк матрицы: ");
             //int lenghtMatrix = Convert.ToInt32(Console.ReadLine());
@@ -247,7 +246,6 @@ namespace Example_005
 
 
             #endregion
-
             #region Решение 1.3
 
             //Console.Write("Введите кол-во строк матрицы №1: ");
@@ -302,7 +300,6 @@ namespace Example_005
             //Console.ReadKey();
 
             #endregion
-
             #region Решение 2
 
             //Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.1
@@ -321,12 +318,16 @@ namespace Example_005
             //Console.ReadKey();
 
             #endregion
-
             #region Решение 4
 
-            Console.WriteLine(IsProgression(2, 4, 8, 16, 32));
-            Console.ReadKey();
+            //Console.WriteLine(IsProgression(2, 4, 8, 16, 32));
+            //Console.ReadKey();
 
+            #endregion
+
+            #region Решение 5
+            Console.WriteLine(Ackermann(2, 3));
+            Console.ReadKey();
             #endregion
 
         }
@@ -511,6 +512,34 @@ namespace Example_005
         // 
         // Весь код должен быть откоммментирован
         #endregion
+
+        #region Решение 5
+        
+        /// <summary>
+        /// Функция Аккермана
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="m"></param>
+        /// <returns></returns>
+        static int Ackermann(int n, int m)
+        {
+            if (n == 0)
+            {
+                return m + 1;
+            }
+            else if (n != 0 && m == 0)
+            {
+                return Ackermann(n - 1, 1);
+            }
+            else
+            {
+                return Ackermann(n - 1, Ackermann(n, m - 1));
+            }
+            
+        }
+
+        #endregion
+
     }
 }
 
