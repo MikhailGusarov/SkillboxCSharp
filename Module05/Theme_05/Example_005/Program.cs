@@ -310,14 +310,21 @@ namespace Example_005
             //Console.ReadKey();
             #endregion
             #region Решение 3
-            string startWord = "ПППОООГГГООООДДДААА";
-            string endWord = deleteDublicateSymbols(startWord);
-            Console.WriteLine($"{startWord} >>> {endWord}");
+            //string startWord = "ПППОООГГГООООДДДААА";
+            //string endWord = deleteDublicateSymbols(startWord);
+            //Console.WriteLine($"{startWord} >>> {endWord}");
 
-            startWord = "Ххххоооорррооошшшиий деееннннь";
-            endWord = deleteDublicateSymbols(startWord);
-            Console.WriteLine($"{startWord} >>> {endWord}");
+            //startWord = "Ххххоооорррооошшшиий деееннннь";
+            //endWord = deleteDublicateSymbols(startWord);
+            //Console.WriteLine($"{startWord} >>> {endWord}");
 
+            //Console.ReadKey();
+
+            #endregion
+
+            #region Решение 4
+
+            Console.WriteLine(IsProgression(2, 4, 8, 16, 32));
             Console.ReadKey();
 
             #endregion
@@ -447,6 +454,52 @@ namespace Example_005
         //
         #endregion
         #region Решение 4
+
+        /// <summary>
+        /// Проверка на арифметическую прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsArithmeticProgression(params int[] args)
+        {
+            int d = args[1] - args[0];
+            for (int i = 2; i < args.Length; i++)
+            {
+                if (args[i] != args[0] + i * d)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        /// <summary>
+        /// Проверка на геометрическую прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsAGeometricProgression(params int[] args)
+        {
+            int q = args[1] / args[0];
+            for (int i = 2; i < args.Length; i++)
+            {
+                if (args[i] != args[i-1]  * q)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Проверка на прогрессию
+        /// </summary>
+        /// <param name="args">список чисел</param>
+        /// <returns>да или нет</returns>
+        static bool IsProgression(params int[] args)
+        {
+            return IsArithmeticProgression(args) || IsAGeometricProgression(args);
+        }
+
         #endregion
         #region ТЗ 5
         // *Задание 5
