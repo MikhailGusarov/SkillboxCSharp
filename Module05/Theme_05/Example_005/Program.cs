@@ -302,8 +302,13 @@ namespace Example_005
             //Console.ReadKey();
 
             #endregion
-            Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}");
+
+            #region Решение 2
+
+            Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.1
+            Console.WriteLine($"2. Ответ: {maxWords("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.2
             Console.ReadKey();
+            #endregion
         }
 
 
@@ -320,6 +325,11 @@ namespace Example_005
         #endregion
         #region Решение 2.1
 
+        /// <summary>
+        /// метод, принимающий текст и возвращающий слово, содержащее минимальное количество букв
+        /// </summary>
+        /// <param name="words">исходное слово</param>
+        /// <returns>минимальное слово</returns>
         static string minWord(string words)
         {
             string result = words;
@@ -342,7 +352,39 @@ namespace Example_005
             }
             return result;
         }
+        
+        /// <summary>
+        /// метод, принимающий текст и возвращающий слова, содержащее максимальное количество букв
+        /// </summary>
+        /// <param name="words">исходное слово</param>
+        /// <returns>максимальные слова</returns>
+        static string maxWords(string words)
+        {
+            string result = "";
+            string resultWord = "";
+            string word = "";
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i] == ' ' || words[i] == '.' || words[i] == ',')
+                {
+                    if (word.Length > resultWord.Length && word != "")
+                    {
+                        result = word;
+                        resultWord = word;
 
+                    }
+                    else if(word.Length == resultWord.Length){
+                        result += " " + word;
+                    }
+                    word = "";
+                }
+                else
+                {
+                    word += words[i];
+                }
+            }
+            return result;
+        }
 
         #endregion
         #region ТЗ 3
