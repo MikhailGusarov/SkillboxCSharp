@@ -305,10 +305,23 @@ namespace Example_005
 
             #region Решение 2
 
-            Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.1
-            Console.WriteLine($"2. Ответ: {maxWords("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.2
-            Console.ReadKey();
+            //Console.WriteLine($"1. Ответ: {minWord("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.1
+            //Console.WriteLine($"2. Ответ: {maxWords("A ББ ВВВ ГГГГ ДДДД  ДД ЕЕ ЖЖ ЗЗЗ")}"); // Задание 2.2
+            //Console.ReadKey();
             #endregion
+            #region Решение 3
+            string startWord = "ПППОООГГГООООДДДААА";
+            string endWord = deleteDublicateSymbols(startWord);
+            Console.WriteLine($"{startWord} >>> {endWord}");
+
+            startWord = "Ххххоооорррооошшшиий деееннннь";
+            endWord = deleteDublicateSymbols(startWord);
+            Console.WriteLine($"{startWord} >>> {endWord}");
+
+            Console.ReadKey();
+
+            #endregion
+
         }
 
 
@@ -323,7 +336,7 @@ namespace Example_005
         // 1. Ответ: А
         // 2. ГГГГ, ДДДД
         #endregion
-        #region Решение 2.1
+        #region Решение 2
 
         /// <summary>
         /// метод, принимающий текст и возвращающий слово, содержащее минимальное количество букв
@@ -395,8 +408,34 @@ namespace Example_005
         // Пример: ПППОООГГГООООДДДААА >>> ПОГОДА
         // Пример: Ххххоооорррооошшшиий деееннннь >>> хороший день
         // 
+
+
+
         #endregion
         #region Решение 3
+
+        /// <summary>
+        /// Метод удаляет дублирующие символы идущие подряд
+        /// </summary>
+        /// <param name="startWord">Исходное слово</param>
+        /// <returns>Получивщееся слово</returns>
+        static string deleteDublicateSymbols(string startWord)
+        {
+            string result = Convert.ToString(startWord[0]);
+            for (int i = 1; i < startWord.Length; i++)
+            {
+                if (startWord.ToUpper()[i] == startWord.ToUpper()[i - 1])
+                {
+                    continue;
+                }
+                else
+                {
+                    result += startWord[i];
+                }
+            }
+            return result;
+        }
+
         #endregion
         #region ТЗ 4
         // Задание 4. Написать метод принимающий некоторое количесво чисел, выяснить
