@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Example_005
@@ -14,20 +15,22 @@ namespace Example_005
         /// <param name="lenght">Кол-во строк массива</param>
         /// <param name="width">Кол-во столбцов массива</param>
         /// <returns>двумерный массив случайных целых числел </returns>
-        static int[,] GenerateMatrix(int lenght, int width)
+        static int[,] GenerateMatrix(int lenght, int width, Random rand)
         {
-            Random rand = new Random();
-
+            
             int[,] matrix = new int[lenght, width];
-            for(int i = 0; i < lenght; i++)
+            for (int i = 0; i < lenght; i++)
             {
                 for (int j = 0; j < width; j++)
                 {
                     matrix[i, j] = rand.Next(1, 9);
                 }
             }
+            
             return matrix;
+
         }
+
         /// <summary>
         /// Умножение числа на двумерный массив
         /// </summary>
@@ -43,6 +46,45 @@ namespace Example_005
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     result[i, j] = matrix[i, j] * Number;
+                }
+            }
+            return result;
+        }
+        /// <summary>
+        /// Суммирование двух двумерных матриц
+        /// </summary>
+        /// <param name="matrix1">первая матрица</param>
+        /// <param name="matrix2">вторая матрица</param>
+        /// <returns>результат сложения двух матриц</returns>
+        static int[,] SumMatrix(int[,] matrix1, int[,] matrix2)
+        {
+
+            int[,] result = new int[matrix1.GetLength(0), matrix1.GetLength(1)];
+            for (int i = 0; i < matrix1.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix1.GetLength(1); j++)
+                {
+                    result[i, j] = matrix1[i, j] + matrix2[i, j];
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Вычитание двух двумерных матриц
+        /// </summary>
+        /// <param name="matrix1">первая матрица</param>
+        /// <param name="matrix2">вторая матрица</param>
+        /// <returns>результат вычитания двух матриц</returns>
+        static int[,] SubTractionMatrix(int[,] matrix1, int[,] matrix2)
+        {
+
+            int[,] result = new int[matrix1.GetLength(0), matrix1.GetLength(1)];
+            for (int i = 0; i < matrix1.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix1.GetLength(1); j++)
+                {
+                    result[i, j] = matrix1[i, j] - matrix2[i, j];
                 }
             }
             return result;
@@ -66,141 +108,117 @@ namespace Example_005
             #region Решение 1
 
             #region Решение 1.1
-            Console.Write("Введите кол-во строк матрицы: ");
-            int lenghtMatrix = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите кол-во столбцов матрицы: ");
-            int widthMatrix = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите число: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-
-
-            int[,] matrix = GenerateMatrix(lenghtMatrix, widthMatrix);
-            int[,] resultMatrix = MultiplicationNumberWithMatrix(number, matrix);
-            
-            // Вывод на экран
-            for (int i = 0; i < lenghtMatrix; i++)
-            {
-                if (i == lenghtMatrix / 2)
-                {
-                    Console.Write($"{number,4} X |");
-                }
-                else
-                {
-                    Console.Write("       |");
-                }
-                for (int j = 0; j < widthMatrix; j++)
-                {
-                    Console.Write($"{matrix[i, j]} ");
-                }
-                if (i == lenghtMatrix / 2)
-                {
-                    Console.Write("| = |");
-                }
-                else
-                {
-                    Console.Write("|   |");
-                }
-                for (int j = 0; j < widthMatrix; j++)
-                {
-                    Console.Write($"{resultMatrix[i, j],3} ");
-                }
-                Console.WriteLine("|");
-            }
-            Console.ReadKey();
-            #endregion
-            #region ТЗ 1.2
-            //
-            // ** Задание 3.2
-            // Заказчику требуется приложение позволяющщее складывать и вычитать математические матрицы
-            // Справка https://ru.wikipedia.org/wiki/Матрица_(математика)
-            // Справка https://ru.wikipedia.org/wiki/Матрица_(математика)#Сложение_матриц
-            // Добавить возможность ввода количество строк и столцов матрицы.
-            // Матрицы заполняются автоматически
-            // Если по введённым пользователем данным действие произвести невозможно - сообщить об этом
-            //
-            // Пример
-            //  |  1  3  5  |   |  1  3  4  |   |  2   6   9  |
-            //  |  4  5  7  | + |  2  5  6  | = |  6  10  13  |
-            //  |  5  3  1  |   |  3  6  7  |   |  8   9   8  |
-            //  
-            //  
-            //  |  1  3  5  |   |  1  3  4  |   |  0   0   1  |
-            //  |  4  5  7  | - |  2  5  6  | = |  2   0   1  |
-            //  |  5  3  1  |   |  3  6  7  |   |  2  -3  -6  |
-            //
-
-            #endregion
-            #region Решение 1.2
             //Console.Write("Введите кол-во строк матрицы: ");
             //int lenghtMatrix = Convert.ToInt32(Console.ReadLine());
             //Console.Write("Введите кол-во столбцов матрицы: ");
             //int widthMatrix = Convert.ToInt32(Console.ReadLine());
-
+            //Console.Write("Введите число: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
             //Random rand = new Random();
 
-            //int[,] matrix1 = new int[lenghtMatrix, widthMatrix];
-            //int[,] matrix2 = new int[lenghtMatrix, widthMatrix];
-            //int[,] resultMatrixPlus = new int[lenghtMatrix, widthMatrix];
-            //int[,] resultMatrixMinus = new int[lenghtMatrix, widthMatrix];
+            //int[,] matrix = GenerateMatrix(lenghtMatrix, widthMatrix, rand);
+            //int[,] resultMatrix = MultiplicationNumberWithMatrix(number, matrix);
+
+            //// Вывод на экран
             //for (int i = 0; i < lenghtMatrix; i++)
             //{
-            //    string stringMatrix1 = "| ";
-            //    string stringMatrix2 = "| ";
-            //    string stringMatrixPlus = "| ";
-            //    for (int j = 0; j < widthMatrix; j++)
-            //    {
-            //        matrix1[i, j] = rand.Next(1, 9);
-            //        matrix2[i, j] = rand.Next(1, 9);
-            //        resultMatrixPlus[i, j] = matrix1[i, j] + matrix2[i, j];
-            //        resultMatrixMinus[i, j] = matrix1[i, j] - matrix2[i, j];
-
-            //        stringMatrix1 += $"{matrix1[i, j],3} ";
-            //        stringMatrix2 += $"{matrix2[i, j],3} ";
-            //        stringMatrixPlus += $"{resultMatrixMinus[i, j],3} ";
-            //    }
-            //    stringMatrix1 += "| ";
-            //    stringMatrix2 += "| ";
-            //    stringMatrixPlus += "| ";
-
-            //    if(i == lenghtMatrix / 2)
-            //    {
-            //        Console.WriteLine($"{stringMatrix1} + {stringMatrix2} = {stringMatrixPlus}");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine($"{stringMatrix1}   {stringMatrix2}   {stringMatrixPlus}");
-            //    }
-            //}
-            //Console.WriteLine();
-
-            //for (int i = 0; i < lenghtMatrix; i++)
-            //{
-            //    string stringMatrix1 = "| ";
-            //    string stringMatrix2 = "| ";
-            //    string stringMatrixMinus = "| ";
-            //    for (int j = 0; j < widthMatrix; j++)
-            //    {
-
-            //        stringMatrix1 += $"{matrix1[i, j],3} ";
-            //        stringMatrix2 += $"{matrix2[i, j],3} ";
-            //        stringMatrixMinus += $"{resultMatrixMinus[i, j], 3} ";
-            //    }
-            //    stringMatrix1 += "| ";
-            //    stringMatrix2 += "| ";
-            //    stringMatrixMinus += "| ";
-
             //    if (i == lenghtMatrix / 2)
             //    {
-            //        Console.WriteLine($"{stringMatrix1} - {stringMatrix2} = {stringMatrixMinus}");
+            //        Console.Write($"{number,4} X |");
             //    }
             //    else
             //    {
-            //        Console.WriteLine($"{stringMatrix1}   {stringMatrix2}   {stringMatrixMinus}");
+            //        Console.Write("       |");
             //    }
+            //    for (int j = 0; j < widthMatrix; j++)
+            //    {
+            //        Console.Write($"{matrix[i, j]} ");
+            //    }
+            //    if (i == lenghtMatrix / 2)
+            //    {
+            //        Console.Write("| = |");
+            //    }
+            //    else
+            //    {
+            //        Console.Write("|   |");
+            //    }
+            //    for (int j = 0; j < widthMatrix; j++)
+            //    {
+            //        Console.Write($"{resultMatrix[i, j],3} ");
+            //    }
+            //    Console.WriteLine("|");
             //}
-
-
             //Console.ReadKey();
+            #endregion
+
+            #region Решение 1.2
+            Console.Write("Введите кол-во строк матрицы: ");
+            int lenghtMatrix = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите кол-во столбцов матрицы: ");
+            int widthMatrix = Convert.ToInt32(Console.ReadLine());
+
+            Random rand = new Random();
+
+            int[,] matrix1 = GenerateMatrix(lenghtMatrix, widthMatrix, rand);
+            int[,] matrix2 = GenerateMatrix(lenghtMatrix, widthMatrix, rand);
+            int[,] resultMatrixPlus = SumMatrix(matrix1, matrix2);
+            int[,] resultMatrixMinus = SubTractionMatrix(matrix1, matrix2);
+
+            // Вывод на экран суммирования матриц
+            for (int i = 0; i < lenghtMatrix; i++)
+            {
+                string stringMatrix1 = "| ";
+                string stringMatrix2 = "| ";
+                string stringMatrixPlus = "| ";
+                for (int j = 0; j < widthMatrix; j++)
+                {
+                    stringMatrix1 += $"{matrix1[i, j],3} ";
+                    stringMatrix2 += $"{matrix2[i, j],3} ";
+                    stringMatrixPlus += $"{resultMatrixPlus[i, j],3} ";
+                }
+                stringMatrix1 += "| ";
+                stringMatrix2 += "| ";
+                stringMatrixPlus += "| ";
+
+                if (i == lenghtMatrix / 2)
+                {
+                    Console.WriteLine($"{stringMatrix1} + {stringMatrix2} = {stringMatrixPlus}");
+                }
+                else
+                {
+                    Console.WriteLine($"{stringMatrix1}   {stringMatrix2}   {stringMatrixPlus}");
+                }
+            }
+            Console.WriteLine();
+            //Вывод на экран вычитание матриц
+            for (int i = 0; i < lenghtMatrix; i++)
+            {
+                string stringMatrix1 = "| ";
+                string stringMatrix2 = "| ";
+                string stringMatrixMinus = "| ";
+                for (int j = 0; j < widthMatrix; j++)
+                {
+
+                    stringMatrix1 += $"{matrix1[i, j],3} ";
+                    stringMatrix2 += $"{matrix2[i, j],3} ";
+                    stringMatrixMinus += $"{resultMatrixMinus[i, j],3} ";
+                }
+                stringMatrix1 += "| ";
+                stringMatrix2 += "| ";
+                stringMatrixMinus += "| ";
+
+                if (i == lenghtMatrix / 2)
+                {
+                    Console.WriteLine($"{stringMatrix1} - {stringMatrix2} = {stringMatrixMinus}");
+                }
+                else
+                {
+                    Console.WriteLine($"{stringMatrix1}   {stringMatrix2}   {stringMatrixMinus}");
+                }
+            }
+
+
+            Console.ReadKey();
 
 
             #endregion
