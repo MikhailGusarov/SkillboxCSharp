@@ -1,0 +1,6 @@
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\bin\Debug\Example_005.exe.config
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\obj\Debug\Example_005.csprojResolveAssemblyReference.cache
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\bin\Debug\Example_005.exe
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\bin\Debug\Example_005.pdb
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\obj\Debug\Example_005.exe
+C:\SkillboxCSharp\Module05\Theme_05\Example_005\obj\Debug\Example_005.pdb
