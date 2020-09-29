@@ -1,0 +1,6 @@
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.exe.config
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.exe
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.pdb
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.csprojResolveAssemblyReference.cache
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.exe
+C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.pdb

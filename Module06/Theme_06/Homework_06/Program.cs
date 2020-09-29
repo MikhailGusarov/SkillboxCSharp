@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,6 +71,12 @@ namespace Homework_06
             /// * При выполнении текущего задания, необходимо документировать код 
             ///   Как пометками, так и xml документацией
             ///   В обязательном порядке создать несколько собственных методов
+
+            int N = Convert.ToInt32(File.ReadAllText(@"N.txt"));
+            Console.WriteLine($"N = {N} M = {Math.Floor(Math.Log(N, 2)) + 1}");
+            
+
+            Console.ReadKey();
 
         }
     }
