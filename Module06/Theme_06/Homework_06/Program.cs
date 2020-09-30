@@ -9,6 +9,16 @@ namespace Homework_06
 {
     class Program
     {
+        /// <summary>
+        /// Получить кол-во групп, т.е. значение M
+        /// </summary>
+        /// <param name="N">максимальное число</param>
+        /// <returns>кол-во групп</returns>
+        static int GetCountGroups(int N)
+        {
+            return (int)(Math.Floor(Math.Log(N, 2)) + 1);
+        }
+
         static void Main(string[] args)
         {
 
@@ -73,11 +83,69 @@ namespace Homework_06
             ///   В обязательном порядке создать несколько собственных методов
 
             int N = Convert.ToInt32(File.ReadAllText(@"N.txt"));
-            Console.WriteLine($"N = {N} M = {Math.Floor(Math.Log(N, 2)) + 1}");
-            
+
+            int M = GetCountGroups(N);
+
+            int[][] groups = GetGroups(N);
+
+            Console.WriteLine($"N = {N} M = {M}");
+
+            //for (int i = 0; i < groups.GetLength(0); i++)
+            //{
+            //    Console.Write($"Группа {i + 1}: ");
+            //    for (int j = 0; j < groups[i].Length; j++)
+            //    {
+            //        if (groups[i][j] == 0)
+            //        {
+            //            break;
+            //        }
+            //        Console.Write($"{groups[i][j]} ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             Console.ReadKey();
 
+        }
+        /// <summary>
+        /// Разбивает на группы последовательность чисел по делению
+        /// </summary>
+        /// <param name="N">масимальное число</param>
+        /// <returns>массив групп</returns>
+        static int[][] GetGroups(int N)
+        {
+            int M = GetCountGroups(N);
+            int[][] groups = new int[M][];
+
+            groups[0] = new int[] { 1 }; ;
+            groups[1] = new int[N / 2];
+            groups[1][0] = 2;
+
+            for (int i = 3; i <= N; i++)
+            {
+                int group = 1;
+                int j = 0;
+                while (groups[group][j] != 0)
+                {
+                    if (i % groups[group][j] == 0)
+                    {
+                        group++;
+                        j = 0;
+                        if (groups[group] == null)
+                        {
+                            groups[group] = new int[N / 2];
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        j++;
+                    }
+
+                }
+                groups[group][j] = i;
+            }
+            return groups;
         }
     }
 }
