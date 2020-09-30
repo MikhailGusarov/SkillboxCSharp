@@ -150,6 +150,8 @@ namespace Homework_06
             ///   Как пометками, так и xml документацией
             ///   В обязательном порядке создать несколько собственных методов
 
+            DateTime dateStart = DateTime.Now;
+
             int N = Convert.ToInt32(File.ReadAllText(@"N.txt"));
 
             int M = GetCountGroups(N);
@@ -158,12 +160,10 @@ namespace Homework_06
 
             WriteInFile(groups, "result.csv");
 
-
-
-
+            TimeSpan workTime = DateTime.Now - dateStart;
 
             Console.WriteLine($"N = {N} M = {M}");
-
+            Console.WriteLine($"Время выполнения программы: {workTime.Seconds} секунд");
             
 
             Console.ReadKey();
