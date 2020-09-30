@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,6 +87,28 @@ namespace Homework_06
             }
         }
 
+        /// <summary>
+        /// Архиивирует файл csv
+        /// </summary>
+        /// <param name="fileName">название файла csv</param>
+        /// <param name="zipFileName">название архива</param>
+        static void ZipCsvFile(string fileName, string zipFileName)
+        {
+            using (FileStream csv = new FileStream(fileName, FileMode.OpenOrCreate))
+            {
+                using (FileStream zip = File.Create(zipFileName))
+                {
+                    using (GZipStream comp = new GZipStream(zip, CompressionMode.Compress))
+                    {
+                        csv.CopyTo(comp);
+                        Console.WriteLine("Сжатие файла {0} завершено. Было: {1}  стало: {2}.",
+                                          fileName,
+                                          csv.Length,
+                                          zip.Length);
+                    }
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -164,12 +187,28 @@ namespace Homework_06
 
             Console.WriteLine($"N = {N} M = {M}");
             Console.WriteLine($"Время выполнения программы: {workTime.Seconds} секунд");
+
+            string fileName = "result.csv";
+            string zipFileName = "result.zip";
+
+            Console.Write("Заархивировать файл (д/н): ");
+            string answer = Console.ReadLine();
             
+            if (answer == "д")
+            {
+                ZipCsvFile(fileName, zipFileName);
+            }
+            else
+            {
+                Console.WriteLine("Ты не знаешь от чего отказываешься!");
+            }
+            
+
+
 
             Console.ReadKey();
 
         }
-        
         
     }
 }
