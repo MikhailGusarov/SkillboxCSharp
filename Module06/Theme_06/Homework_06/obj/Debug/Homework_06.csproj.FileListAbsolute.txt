@@ -4,3 +4,10 @@ C:\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.pdb
 C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.csprojResolveAssemblyReference.cache
 C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.exe
 C:\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.pdb
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.exe.config
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.exe
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\bin\Debug\Homework_06.pdb
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.csprojAssemblyReference.cache
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.csproj.CoreCompileInputs.cache
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.exe
+D:\projects\SkillboxCSharp\Module06\Theme_06\Homework_06\obj\Debug\Homework_06.pdb

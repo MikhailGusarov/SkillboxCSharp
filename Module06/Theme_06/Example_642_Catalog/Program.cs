@@ -17,30 +17,30 @@ namespace Example_642_Catalog
             // Дата
             // Описание заметки
 
-            //using (StreamWriter sw = new StreamWriter("db.csv", true, Encoding.Unicode))
-            //{
-            //    char key = 'д';
-                
-            //    do
-            //    {
-            //        string note = string.Empty;
-            //        Console.Write("\nВведите имя автора записи: ");
-            //        note += $"{Console.ReadLine()}\t";
+            using (StreamWriter sw = new StreamWriter("db.csv", true, Encoding.Unicode))
+            {
+                char key = 'д';
 
-            //        string now = DateTime.Now.ToShortTimeString();
-            //        Console.WriteLine($"Время заметки {now}");
-            //        note += $"{now}\t";
+                do
+                {
+                    string note = string.Empty;
+                    Console.Write("\nВведите имя автора записи: ");
+                    note += $"{Console.ReadLine()}\t";
 
-            //        Console.Write("Введите описание заметки: ");
-            //        note += $"{Console.ReadLine()}\t";
-            //        sw.WriteLine(note);
-            //        Console.Write("Продожить н/д"); key = Console.ReadKey(true).KeyChar;
-            //    } while (char.ToLower(key) == 'д');
-            //}
+                    string now = DateTime.Now.ToShortTimeString();
+                    Console.WriteLine($"Время заметки {now}");
+                    note += $"{now}\t";
+
+                    Console.Write("Введите описание заметки: ");
+                    note += $"{Console.ReadLine()}\t";
+                    sw.WriteLine(note);
+                    Console.Write("Продожить н/д"); key = Console.ReadKey(true).KeyChar;
+                } while (char.ToLower(key) == 'д');
+            }
 
             #region Чтение
 
-             
+
 
             using (StreamReader sr = new StreamReader("data.csv", Encoding.Unicode))
             {

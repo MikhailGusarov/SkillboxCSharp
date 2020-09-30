@@ -19,6 +19,74 @@ namespace Homework_06
             return (int)(Math.Floor(Math.Log(N, 2)) + 1);
         }
 
+        /// <summary>
+        /// Разбивает на группы последовательность чисел по делению
+        /// </summary>
+        /// <param name="N">масимальное число</param>
+        /// <returns>массив групп</returns>
+        static int[][] GetGroups(int N)
+        {
+            int M = GetCountGroups(N);
+            int[][] groups = new int[M][];
+
+            groups[0] = new int[] { 1 }; ;
+            groups[1] = new int[N / 2];
+            groups[1][0] = 2;
+
+            for (int i = 3; i <= N; i++)
+            {
+                int group = 1;
+                int j = 0;
+                while (groups[group][j] != 0)
+                {
+                    if (i % groups[group][j] == 0)
+                    {
+                        group++;
+                        j = 0;
+                        if (groups[group] == null)
+                        {
+                            groups[group] = new int[N / 2];
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        j++;
+                    }
+
+                }
+                groups[group][j] = i;
+            }
+            return groups;
+        }
+
+        /// <summary>
+        /// Запись групп чисел в csv файл
+        /// </summary>
+        /// <param name="groups">Группа чисел</param>
+        /// <param name="url">название файла или URL</param>
+        static void WriteInFile(int[][] groups, string url)
+        {
+            using (StreamWriter sw = new StreamWriter(url, false, Encoding.Unicode))
+            {
+                string line;
+                for (int i = 0; i < groups.GetLength(0); i++)
+                {
+                    line = "";
+                    for (int j = 0; j < groups[i].Length; j++)
+                    {
+                        if (groups[i][j] == 0)
+                        {
+                            break;
+                        }
+                        line += ($"{groups[i][j]}\t");
+                    }
+                    sw.WriteLine(line);
+                }
+            }
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -88,64 +156,20 @@ namespace Homework_06
 
             int[][] groups = GetGroups(N);
 
+            WriteInFile(groups, "result.csv");
+
+
+
+
+
             Console.WriteLine($"N = {N} M = {M}");
 
-            //for (int i = 0; i < groups.GetLength(0); i++)
-            //{
-            //    Console.Write($"Группа {i + 1}: ");
-            //    for (int j = 0; j < groups[i].Length; j++)
-            //    {
-            //        if (groups[i][j] == 0)
-            //        {
-            //            break;
-            //        }
-            //        Console.Write($"{groups[i][j]} ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            
 
             Console.ReadKey();
 
         }
-        /// <summary>
-        /// Разбивает на группы последовательность чисел по делению
-        /// </summary>
-        /// <param name="N">масимальное число</param>
-        /// <returns>массив групп</returns>
-        static int[][] GetGroups(int N)
-        {
-            int M = GetCountGroups(N);
-            int[][] groups = new int[M][];
-
-            groups[0] = new int[] { 1 }; ;
-            groups[1] = new int[N / 2];
-            groups[1][0] = 2;
-
-            for (int i = 3; i <= N; i++)
-            {
-                int group = 1;
-                int j = 0;
-                while (groups[group][j] != 0)
-                {
-                    if (i % groups[group][j] == 0)
-                    {
-                        group++;
-                        j = 0;
-                        if (groups[group] == null)
-                        {
-                            groups[group] = new int[N / 2];
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        j++;
-                    }
-
-                }
-                groups[group][j] = i;
-            }
-            return groups;
-        }
+        
+        
     }
 }
